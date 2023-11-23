@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<link rel="stylesheet" href="2estilos.css">
+
+<head>
+    <meta charset="utf-8">
+    <title>Formulario de inscripcion</title>
+    <meta name="description" content="Javascript nos da la bienvenida y nos quiere conocer un poco">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="formulario.css">
+</head>
+
+<div>
+
+    <body>
+        <section class="form-register">
+            <form action="conexionf.php" method="POST">
+                <h4>Formulario De Inscripcion</h4>
+                <input class="controls" type="text" name="Nombres" id="Nombres" placeholder="Ingrese sus Nombre"
+                    required autofocus="autofocus">
+                <input class="controls" type="text" name="Apellidos" id="Apellidos" placeholder="Ingrese sus Apellido"
+                    required>
+                <input class="controls" type="number" name="Edad" id="Edad" placeholder="Ingrese su Edad" required>
+                <input class="controls" type="tel" name="Telefono" id="Telefono" placeholder="Ingrese su Telefono"
+                    required>
+                <input class="controls" type="text" name="Direccion" id="Direccion" placeholder="Ingrese su Direccion"
+                    required>
+                <input class="controls" type="text" name="Barrio" id="Barrio" placeholder="Ingrese su Barrio" required>
+
+                <br>
+                <br>
+                <div>
+                    <span name="EstadoCivil" class="controls">Estado Civil</span>
+                    <select class="controls" id="EstadoCivil" name="EstadoCivil" required>
+                        <option>elegir ...</option>
+                        <option>Soltero</option>
+                        <option>Casado</option>
+                        <option>Union Libre</option>
+                        <option>Divorciado</option>
+                        <option>Viudo</option>
+                    </select>
+                </div>
+
+                <br>
+                <div>
+                    <span name="Genero" class="controls">Genero</span>
+                    <select class="controls" id="Genero" name="Genero" required>
+                        <option>elegir ...</option>
+                        <option>Masculino</option>
+                        <option>Femenino</option>
+                        <option>Otro</option>
+                    </select>
+                </div>
+
+                <input class="controls" type="text" name="RH" id="EH" placeholder="Ingrese su RH" required>
+                <input class="controls" type="text" name="Pregrado" id="Pregrado" placeholder="Ingrese su Pregrado"
+                    required>
+                <br>
+                <br>
+
+                <div>
+                    <span name="Jornada" class="controls">Jornada</span>
+                    <select class="controls" id="Jornada" name="Jornada" required>
+                        <option>elegir ...</option>
+                        <option>Nocturna</option>
+                        <option>Diurna</option>
+                    </select>
+                </div>
+
+                <input class="botons" type="submit" value="Registrar">
+                <input class="botons" type="reset" value="Borrar información">
+            </form>
+        </section>
+
+    </body>
+</div>
+
+</html>
